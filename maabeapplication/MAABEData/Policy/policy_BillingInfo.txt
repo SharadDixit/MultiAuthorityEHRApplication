@@ -1,0 +1,2 @@
+//Senior Doctor or Junior Doctor or Billing Specialist
+(MD@AMA) or (PharmD@ACPE and AI@ABMS) or (CPC@AAPC)

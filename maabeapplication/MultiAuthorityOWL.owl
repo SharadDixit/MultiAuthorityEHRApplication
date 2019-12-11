@@ -1,0 +1,1379 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#"
+     xml:base="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:Multi_AuthorityEHR="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#fromMedicalInstitution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#fromMedicalInstitution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#getsTreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#getsTreatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isAuthorizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isAuthorizedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCertifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCertifiedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCreatedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isRegisteredWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isRegisteredWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isSpecializedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isSpecializedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isUpdatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isUpdatedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesBillingAndCoding -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesBillingAndCoding"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesEmegencyMedicalServices -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesEmegencyMedicalServices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesMedicine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesMedicine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#providesTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#reportTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#reportTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModify -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModify">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyAllergies -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyAllergies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyBillingInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyBillingInfo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDiagnoses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDiagnoses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDoctorNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDoctorNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyImmunizationDates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyImmunizationDates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyLabResults -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyLabResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyMedication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyMedication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyPrescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyPrescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyVitalStats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyVitalStats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canRead -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canRead">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadAllergies -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadAllergies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadBillingInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadBillingInfo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDiagnoses -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDiagnoses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDoctorNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDoctorNotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadImmunizationDates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadImmunizationDates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadLabResults -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadLabResults">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadMedication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadMedication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadPrescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadPrescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadVitalStats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadVitalStats">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canWrite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canWrite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasAddress">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasPassword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasPassword">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasUID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#hasUID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BillingCodingSpecialist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BillingCodingSpecialist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EHR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EHR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EmergencyMedicalTechnician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EmergencyMedicalTechnician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorDoctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorDoctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorNurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalAdministrativeAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalAdministrativeAssistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalAssistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NationallyRegisteredParamedic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NationallyRegisteredParamedic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Pharmacist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Pharmacist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmacistTechnician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmacistTechnician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Doctor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorNurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Nurse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAMA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AmericanAssociationOfMedicalAssistants</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AmericanAuthorityOfNursePractitioners</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AmericanAcademyOfProfessionalCoders</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AmericanBoardOfMedicalSpecialities</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ACPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ACPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AccreditationCouncilForPharmacyEducation</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AllergyAndImmunology</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AMA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AmericanMedicalAssociation</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Abhinav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Abhinav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AI"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmD"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arcin795</hasPassword>
+        <hasUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abhinav1234</hasUID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Josh"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CMA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CMA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAMA"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CertifiedMedicalAssistant</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CMAA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CMAA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NHA"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CertifiedMedicalAdministrativeAssistant</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CNM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CNM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CertifiedNurseMidwives</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CNS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CNS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ClinicalNurseSpecialists</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AAPC"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CertifiedProfessionalCoder</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPhT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPhT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NHA"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PharmacyTechnicianCertificationBoard</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CRNA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CRNA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CertifiedRegisteredNurseAnesthetists</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Chris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Chris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Debby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Debby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmergencyMedicine</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EMT-B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EMT-B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NREMT"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EmergencyMedicalTechnician</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#IM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#IM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InternalMedicine</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Jenny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Jenny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Josh"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Josh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Josh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorDoctor"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmD"/>
+        <isSpecializedIn rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AI"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AMA"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DoctorOfMedicine</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Matthew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Matthew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#VirginiaMedicalHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NHA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NHA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NationalHealthcareerAssociation</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NursePractitioners</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NREMT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NREMT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NationalRegistryOfEmergencyMedicalTechnicians</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NRP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NRP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NREMT"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NationallyRegisteredParamedic</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeurologicalSurgery</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ABMS"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pediatrics</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ACPE"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DoctorOfPharmacy</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Puneet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Puneet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BillingCodingSpecialist"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPC"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+        <hasUID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PuneetReddirajula</hasUID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#RN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#RN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+        <isAuthorizedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#AANP"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RegisteredNurse</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Sam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Sam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <getsTreatedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Samantha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Samantha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SharadDoctor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SharadDoctor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SharadNurse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SharadNurse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorNurse"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#RN"/>
+        <isSpecializedIn rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#NP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Shashwat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor"/>
+        <fromMedicalInstitution rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BaltimoreHospital"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MD"/>
+        <isCertifiedBy rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#PharmD"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NE86212</hasID>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345678</hasPassword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#VirginiaMedicalHospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#VirginiaMedicalHospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Authority"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Certifications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#EHR"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MedicalInstitution"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#ProfessionalDesignation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Specialization"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#je">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#JuniorDoctor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#je"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDiagnoses"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#je"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadMedication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#je"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyAllergies"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#je"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#Patient"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadMedication"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadBillingInfo"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadImmunizationDates"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadAllergies"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDiagnoses"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadPrescription"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadDoctorNotes"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#pe"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#SeniorDoctor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCertifiedBy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#MD"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyMedication"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyAllergies"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDoctorNotes"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadImmunizationDates"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadBillingInfo"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyPrescription"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyDiagnoses"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#se"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biiling Specialist Rule</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#isCertifiedBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#CPC"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#BillingCodingSpecialist"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadMedication"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadPrescription"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canModifyBillingInfo"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#canReadImmunizationDates"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/sharad/ontologies/2018/10/Multi_AuthorityEHR#be"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

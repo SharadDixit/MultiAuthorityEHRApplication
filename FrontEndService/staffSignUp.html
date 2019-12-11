@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EHR Staff Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/staffSignUp.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("sideBar.html");
+    });
+  </script>
+  <style>
+    body{
+      background-color: azure  !important;
+    }
+  </style>
+</head>
+
+<body>
+<div id="nav-placeholder">
+
+</div>
+
+<div class="container" id="mainContent">
+  <h2>  </h2>
+  <form action="http://localhost:11001/FrontEndService/signUpService/" method="POST" class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="UID">User ID:</label>
+      <div class="col-sm-10">
+        <input type="text" oninput = "auth()" class="form-control" name="UID" placeholder="Enter User ID">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Name">User Name:</label>
+      <div class="col-sm-10">
+        <input type="text" oninput = "auth()" class="form-control" name="Name" placeholder="Enter User Name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Password">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" name="Password" placeholder="Enter password">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="ProfessionalDesignation">Professional Designation:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" name="ProfessionalDesignation" placeholder="Enter User Role">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Certification">Certification:</label>
+      <div class="col-sm-10">
+          <div class="input-group">
+            <div class="duplicate">
+              <input id="certification" type="text" class="form-control" name="Certification" placeholder="Enter User Certification">
+            </div>
+            <span class="input-group-btn">
+            <input type="button" class="btn btn-primary addMoreCertification" style="margin-left:5px" value="Add More">
+            </span>
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Specialization">Specialization:</label>
+      <div class="col-sm-10">
+        <div class="input-group">
+          <div class="duplicate">
+            <input id="specialization" type="text" class="form-control" name="Specialization" placeholder="Enter User Specialization">
+          </div>
+          <span class="input-group-btn">
+            <input type="button" class="btn btn-primary addMoreSpecialization" style="margin-left:5px" value="Add More">
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="MedicalInstitution">Medical Institution:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="MedicalInstitution" placeholder="Enter Medical Institution Name">
+      </div>
+    </div>
+
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+       <button id="btnSignUp" class="btn btn-lg btn-success btn-block" type="submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+
+<img src="img/EHR_logo.jpeg" alt="ehrlogo" width="120" height="100" id = "imageContent">
+
+<img src="img/UMBC_logo.png" alt="umbclogo" width="100" height="100" id = "umbcimageContent">

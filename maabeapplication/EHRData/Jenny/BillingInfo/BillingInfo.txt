@@ -1,0 +1,7 @@
+The patient has been billed as follows,
+Full Body Check-up
+Full Body Check-up	: $1890
+
+Medical Insurance Converage	: $1800
+
+Total expenses to be pais	: $90

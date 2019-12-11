@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patient EHR Details (Staff View)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/patientEHRDetails.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/patientSelection.js"></script>
+  <script type="text/javascript" src="js/patientEHRDetails.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("sideBar.html");
+    });
+
+    // document.getElementById("check").append("das");
+  </script>
+  <style>
+    body{
+      background-color: azure  !important;
+    }
+  </style>
+  <script id="hidden-template" type="text/x-custom-template">
+    <div class="col-sm-4">
+        <div class="panel panel-default" style="width: 85%;height: 100%">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+            <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> -->
+            <h4> <b id="ehrType"> </b> </h4></a>
+    </h4>
+    </div>
+    <!-- <div id="collapse1" class="panel-collapse collapse in"> -->
+    <div class="checkbox">
+            <label><input type="checkbox" name="select" value="{{ af.0 }}"  data-toggle="modal" data-target="#myModal"> Select to Edit </label> </input>
+    </div>
+
+
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="color: white;float: right;">Click to Edit</button> -->
+
+    <div class="panel-body">
+      <iframe id="ehrData" style="width: 100%;height: 100%;border: none;"> </iframe>
+    </div >
+            <!-- </div> for collapse -->
+
+            </div>
+    </div>
+  </script>
+</head>
+
+<body>
+<div id="nav-placeholder">
+
+</div>
+
+<div class="container" id="h1">
+
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav" id="myNavbar" >
+
+      <li style="font-size:20px;float:right;color: black"> <span class="glyphicon glyphicon-user" style="font-size:20px;color:black;" > <h5> <p id="doctorName"> Doctor : </p> <p id="patientName"> Patient : </p> </h5></span></li>
+
+      <li style="font-size:15px;color: black" id="titl"><h4> <p> User Attributes: </p> </h4> </li>
+
+      <li style="font-size:20px;color: black" id="attr"><h6> <p id="role"> Professional Designation : </p> <p id="certificate"> Certification :  </p> <p id="specialCertificate"> Specialization :  </p>  <p id="medicalIns"> Medical Institution : </p> </h6></li>
+
+      <!-- <li style="font-size:20px;float:right;color:white;" id = "icon"> <h5> <p> Patient : {{ patientName }}</p> <p> Doctor : {{ doctorName }} </p> </h5> </li> -->
+
+    </ul>
+    <p> <h2 style="color: black" id="myicon"> EHR Details </h2> </p>
+  </div>
+
+  <!-- <h2>Patient : {{ patientName }} </h2> -->
+  <!-- <p> <h3> EHR Details </h3> </p> -->
+  <form role="form" action="http://localhost:63344/FrontEndService/home.html">
+  <div class="panel-group"  id="accordion" style="width: 110%;height: 40%">
+    <br>
+  <!-- <div class="row"> -->
+    <div class="row">
+
+      <div id="target">
+
+      </div>
+    <!-- <div class="column"> -->
+
+    </div>
+  <!-- </div> -->
+  <!-- </div> -->
+  <div class="modal fade" id="myModal" tabindex="-1"  role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+            <!-- <h4 class="modal-title">{{ af }}</h4> -->
+        </div>
+        <div class="modal-body">
+        <input id="inputEdit" type="text" class="form-control" name="inputEdit" value="{{ af }}" placeholder="Enter Your Edits">
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="saveEHRChanges" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div>  -->
+  <!-- </div> -->
+  </div>
+
+  <button class="btn btn-success">Done</button>
+
+</form>
+</div>

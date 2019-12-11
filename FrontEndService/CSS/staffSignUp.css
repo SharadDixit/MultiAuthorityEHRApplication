@@ -1,0 +1,25 @@
+#imageContent {
+    position: fixed;
+    bottom : 10px;
+    left : 10px;
+    /*margin-top: -40px*/
+}
+
+#umbcimageContent {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#mainContent {
+
+    height: 590px;
+    right: 10px;
+
+}
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+
+}

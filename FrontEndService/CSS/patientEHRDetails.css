@@ -1,0 +1,29 @@
+#attr{
+    position: absolute;
+    /* Adjust these values accordingly */
+    top: 3px;
+    left: 1450px;
+    /*float: right;*/
+}
+
+#titl{
+    position: absolute;
+    /* Adjust these values accordingly */
+    top: 1px;
+    left: 1300px;
+    /*float: right;*/
+}
+
+#box{
+    position: absolute;
+    left: 1100px
+}
+
+#myicon{
+    position: absolute;
+    /* Adjust these values accordingly */
+    font-family: "Times New Roman", sans-serif;
+    top: 0px;
+    left: 800px;
+    /*float: right;*/
+}

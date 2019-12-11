@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patient Select (Staff View)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/patientSelection.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("sideBar.html");
+    });
+  </script>
+    <style>
+        body{
+            background-color: azure  !important;
+        }
+    </style>
+  <script id="hidden-template" type="text/x-custom-template">
+      <tr>
+        <td id="patientName">  </td>
+        <td id="medName"> </td>
+        <td id="docName"> </td>
+        <!--        <td> {{ p.purpose }} </td>-->
+        <td>
+<!--          <div class="radio">-->
+            <label><input id="inputVal" type="radio" name="patientName"></label>
+<!--          </div>-->
+          <input id="doctorName" type="hidden" name="doctorName"/>
+
+        </td>
+      </tr>
+  </script>
+</head>
+
+<body>
+<div id="nav-placeholder">
+
+</div>
+<div class="container" id="h1">
+  <br>
+    <ul class="nav navbar-nav">
+      <li><span class="glyphicon glyphicon-user" style="font-size:30px;color:black;" ></span> <span style="margin-left:10px; font-size: 30px" id = "icon"> </span></li>
+    </ul>
+  <br>
+  <br>
+  <h2>Patient Details (Select one patient)</h2>
+  <form id="patientSelection" role="form" method="POST">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Patient Name</th>
+        <th>Medical Institution</th>
+        <th>Doctor Name</th>
+<!--        <th>Purpose</th>s-->
+        <th> </th>
+      </tr>
+      </thead>
+      <tbody>
+
+
+      </tbody>
+     <tbody id="target">
+
+     </tbody>
+
+    </table>
+
+    <button type="submit" class="btn btn-primary">Select Patient</button>
+  </form>
+</div>

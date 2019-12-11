@@ -1,0 +1,7 @@
+The patient has been billed as follows,
+Doctor's charges
+Doctor visit charges : $400
+
+Medical Insurance Coverage	:$0
+
+Total expenses to be paid	:$400

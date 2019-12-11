@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patient EHR Details (Patient View)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/patientEHRDetails.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("sideBar.html");
+    });
+
+    // document.getElementById("check").append("das");
+  </script>
+  <style>
+    body{
+      background-color: azure  !important;
+    }
+  </style>
+  <script id="hidden-template" type="text/x-custom-template">
+    <div class="col-sm-4">
+            <div class="panel panel-default" style="width: 85%;height: 100%">
+            <div class="panel-heading">
+            <h4 class="panel-title">
+            <!-- <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> -->
+            <h4> <b id="ehrType"> </b> </h4></a>
+    </h4>
+    </div>
+    <div class="panel-body">
+            <iframe id="ehrData" style="width: 100%;height: 100%;border: none;"> </iframe>
+    </div>
+            <!-- </div> for collapse -->
+            </div>
+            </div>
+  </script>
+</head>
+<body>
+<div id="nav-placeholder">
+
+</div>
+
+<div class="container" id="h1">
+
+  <div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav" id="myNavbar" >
+
+      <li style="font-size:20px;float:right;color: Black"> <span class="glyphicon glyphicon-user" style="font-size:20px;color:Black;" > <h5> <p id="patientName"> Patient : </p> </h5></span></li>
+
+    </ul>
+    <p><h2 style="color: black" id="myicon"> EHR Details </h2>  </p>
+  </div>
+
+  <form role="form" action="http://localhost:63344/FrontEndService/home.html">
+  <div class="panel-group"  id="accordion" style="width: 110%;height: 40%">
+  <!-- <div class="row"> -->
+    <div class="row">
+      <div id="target">
+
+      </div>
+
+    </div>
+  </div>
+    <button class="btn btn-success">Done</button>
+</form>
+</div>

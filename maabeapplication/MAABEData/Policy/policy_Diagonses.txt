@@ -1,0 +1,2 @@
+//Senior Doctor or Junior Doctor
+(MD@AMA) or (PharmD@ACPE and AI@ABMS)
